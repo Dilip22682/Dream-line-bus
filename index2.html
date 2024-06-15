@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service form</title>
+    <style>
+      .main-container {
+        width: 68%;
+        height:71vh;
+        background-color: rgba(145, 152, 149, 0.742);
+        margin: 67px 300px 0 300px;
+        animation: hide 2s ease-out;
+        box-shadow: -3px 3px 58px 14px rgb(52, 50, 50) inset;
+      }
+
+      @keyframes hide {
+        from {
+          opacity: 0px;
+          transform: scale(0);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .main-container h1 {
+        text-align: center;
+        position: relative;
+        top: 30px;
+        color: aliceblue;
+      }
+      .pic1 {
+        position: relative;
+        top: 41px;
+        width: 600px;
+        height: 351px;
+        border: 2px solid;
+        left: 35px;
+        display: inline-block;
+      }
+
+      .form-fill {
+        display: inline-block;
+        width: 315px;
+        height: 351px;
+        border: 2px solid;
+        position: relative;
+        left: 59px;
+        top: -96px;
+        background: rgb(32, 30, 30);
+        background: linear-gradient(
+          10deg,
+          rgba(32, 30, 30, 0.9613095238095238) 1%,
+          rgba(25, 82, 235, 0.8772759103641457) 43%
+        );
+        label {
+          color: aliceblue;
+        }
+        input {
+          width: 268px;
+          height: 27px;
+          border-radius: 20px;
+        }
+      }
+      .form-fill h1 {
+        text-align: center;
+        position: relative;
+        top: -10px;
+      }
+
+      .form-fill label {
+        position: relative;
+        left: 35px;
+        font-size: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif
+      }
+      .form-fill input {
+        position: relative;
+        left: 14px;
+        padding-left: 20px;
+      }
+
+      .form-fill input:nth-child(8) {
+        position: relative;
+        left: 14px;
+        top:25px;
+        padding-left: 20px;
+      }
+      .form-fill label:nth-child(6){
+        position: relative;
+        top: 25px;
+      } 
+
+
+      .form-fill input::placeholder {
+        padding-left: 10px;
+      }
+      .btn-submit {
+        height: 35px;
+        width: 268px;
+        position: relative;
+        top: 100px;
+        left: 25px;
+        color: white;
+        border-radius: 46px;
+        background: rgb(214, 42, 124);
+        background: linear-gradient(
+          135deg,
+          rgba(214, 42, 124, 0.9613095238095238) 1%,
+          rgba(25, 82, 235, 0.8772759103641457) 43%
+        );
+      }
+      .btn-submit:hover {
+        background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+      }
+    </style>
+  </head>
+
+  
+  <body>
+    <div class="main-container">
+      <h1>
+        <span style="color: red">DREAM</span>
+        <span style="color: blue">LINE</span> BUS SERVIVES PVT LMT
+      </h1>
+      <div class="pic1">
+        <img
+          src="./back-image.jpg"
+          alt=""
+          style="height: 351px; width: 600px"
+        />
+      </div>
+      <div class="form-fill">
+        <h1 style="color: aliceblue"><u>Log In</u></h1>
+        <label for="">User Name:</label><br /><input
+          type="text"
+          placeholder="Username"
+        /><br />
+        <label for="">Password:</label><br /><input
+          type="text"
+          placeholder="Password"
+        /><br />
+
+        <button class="btn-submit">Sign In</button>
+      </div>
+    </div>
+  </body>
+</html>

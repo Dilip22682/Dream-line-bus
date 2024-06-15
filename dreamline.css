@@ -1,0 +1,573 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main-div {
+  width: 100%;
+  height: 100vh;
+  /* background :rgb(184, 184, 8); */
+  display: flex;
+  background-image: url(./back-image.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+  /* position: sticky; */
+}
+.navbar {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  width: 100%;
+  height: 70px;
+  display: flex;
+  /* gap: 10px; */
+  /* flex-direction: flex-end; */
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+
+.dream-logo img{
+  width: 320px;
+  height: 50px;
+  position: relative;
+  /* right: 400px; */
+   top:5px; 
+   left:10px;
+   list-style-type: none;
+  position: fixed;
+  z-index: 100;
+  border:5px solid orangered;
+
+}
+.dream-logo img:hover{
+  border:5px solid aqua;
+}
+  
+
+
+.navbar a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-size: 19px;
+  padding-top: 28px;
+  position: relative;
+  border: 2px solid;
+  /* padding-right: 0px; */
+  /* padding-right: 50px; */
+  padding: 8px;
+  color: aliceblue;
+  margin-right: 10px;
+  /* color: white; */
+}
+.navbar a:hover {
+  background-color: orangered;
+  /* height: 25px; */
+}
+.navbar a:nth-child(6) {
+  background-color: orangered;
+  transition: all 0.2s ease-in-out;
+}
+.navbar a:nth-child(6):hover {
+  background: blueviolet;
+  color: blanchedalmond;
+}
+
+.navbar a:nth-child(7) {
+  background-color: orangered;
+}
+.navbar a:nth-child(7):hover {
+  background: blueviolet;
+  color: blanchedalmond;
+}
+
+/* Search box Css started from here */
+.booking-box {
+  width: 79%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50, 0.5) 0%,
+    rgb(0, 0, 0, 0.5) 99.4%
+  );
+  /* z-index: -1; */
+  /* display: inline-block; */
+  position: relative;
+  top: 601px;
+  left: 239px;
+  border-radius: 15px;
+}
+.booking-box input {
+  width: 220px;
+  height: 30px;
+  padding-left: 40px;
+  border-radius: 15px;
+}
+
+.booking-box select {
+  width: 220px;
+  height: 35px;
+  padding-left: 50px;
+  position: relative;
+  left: -7px;
+  border-radius: 15px;
+}
+
+.booking-box button {
+  width: 220px;
+  height: 35px;
+  border-radius: 12px;
+  background: rgb(13, 173, 7);
+  outline: none;
+  /* padding-left: 50px; */
+  position: relative;
+  right: 5px;
+  a {
+    text-decoration: none;
+    text-decoration: uppercase;
+    color: black;
+    font-size: 18px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 800;
+  }
+}
+
+.booking-box button:hover {
+  background: orangered;
+}
+
+.booking-box svg {
+  z-index: 1;
+  position: relative;
+  left: 32px;
+  width: 28px;
+  height: 17px;
+}
+
+.arrow svg {
+  position: relative;
+  color: rgb(10, 203, 10);
+  left: 14px;
+  height: 23px;
+  width: 27px;
+  /* background-color: aqua; */
+}
+
+/* Second page  css started from here-------------------------*/
+.sec-page {
+  margin-top: -25px;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  /* display: flex; */
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+    color: #fff;
+  }
+}
+
+.tour-place {
+  width: 80%;
+  height: 50vh;
+  /* background-color: aqua; */
+  position: relative;
+  left: 14%;
+  top: 50px;
+}
+.phto1 {
+  width: 240px;
+  height: 390px;
+  border: 2px solid;
+  display: inline-block;
+  background-color: rgb(167, 156, 156);
+  margin-left: 30px;
+  h3 {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: -18px;
+    background-color: orangered;
+  }
+  p {
+    text-align: justify;
+    padding: 10px;
+    position: relative;
+    top: -28px;
+    color: #fff;
+  }
+}
+.phto1:hover {
+  transition: all 0.4s ease;
+  width: 240px;
+  height: 390px;
+  /* border:10px solid orangered; */
+  box-shadow: 10px 10px 15px 12px orangered;
+}
+.phto1 p:hover {
+  color: orangered;
+  background-color: black;
+}
+
+/* third  page  css started from here-------------------------*/
+.third-page {
+  width: 100%;
+  height: 100vh;
+  /* background-color:bisque; */
+
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one1 {
+  h1 {
+    /* color: #fff; */
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+  img {
+    position: relative;
+    left: 90px;
+  }
+  p {
+    text-align: justify;
+    padding: 20px;
+    font-size: 700;
+    font-size: 17px;
+    color: orangered;
+  }
+  a {
+    text-decoration: none;
+    position: relative;
+    top: -30px;
+    color: red;
+  }
+  .drag-up {
+    position: relative;
+    top: -70px;
+    /* padding: 10px; */
+  }
+
+  button {
+    position: relative;
+    width: 120px;
+    height: 35px;
+    bottom: 72px;
+    left: 80px;
+    border-radius: 12px;
+    background: darkorange;
+  }
+
+  .btn {
+    position: relative;
+    top: 0px;
+    font-size: 700;
+    color: aliceblue;
+  }
+  button:hover {
+    background-color: orangered;
+    box-shadow: 7px 4px 6px 5px orangered;
+  }
+}
+.dream {
+  width: 600px;
+  height: 650px;
+  border: 2px solid orangered;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+}
+.two2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: space-around; */
+}
+.popular {
+  width: 550px;
+  height: 170px;
+  border: 2px solid orangered;
+  position: relative;
+  left: 22px;
+  top: 50px;
+  border-radius: 12px;
+
+  .fast-book {
+    width: 150px;
+    height: 170px;
+    position: absolute;
+    /* border: 1px solid black;   */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fast-book img {
+    width: 70px;
+    height: 70px;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    /* display: inline-block; */
+  }
+  p {
+    width: 320px;
+    height: 70px;
+    font-size: 17px;
+    position: relative;
+    left: 170px;
+    top: -10px;
+    color: orangered;
+  }
+}
+
+.popular:hover {
+  box-shadow: 7px 7px 5px 10px orangered;
+}
+.secondary {
+  display: flex;
+  /* position: absolute; */
+
+  .spendless {
+    width: 150px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spendless img {
+    width: 70px;
+    height: 70px;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    /* display: inline-block; */
+  }
+  p {
+    width: 320px;
+    height: 70px;
+    font-size: 17px;
+    position: relative;
+    left: 10px;
+    top: 70px;
+    color: oranged;
+  }
+}
+.tersary {
+  display: flex;
+  /* position: absolute; */
+
+  .stress-free {
+    width: 150px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spendless img {
+    width: 70px;
+    height: 70px;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    /* display: inline-block; */
+  }
+  p {
+    width: 320px;
+    height: 70px;
+    font-size: 17px;
+    position: relative;
+    left: 10px;
+    top: 70px;
+    color: oranged;
+  }
+}
+
+.page-four {
+  margin-top: -22px;
+
+  width: 100%;
+  height: 50vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+
+  
+  li {
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    color: aqua;
+    h4 {
+      font-weight: 700;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+}
+.head-amenities h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.supplyItem {
+  display: flex;
+  gap: 10px;
+  /* justify-content:center; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page-four li:nth-child(3) {
+  position: relative;
+  /* left: 150px; */
+}
+
+li img:hover {
+  /* background:orangered; */
+  box-shadow: 0 0 5px 10px aqua;
+  /* outline:2px orangered; */
+  border-radius: 50%;
+}
+
+/* gallery css from here */
+.Gallery-div {
+  margin-top: -22px;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  h1{
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}
+
+.busphoto-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  gap: 20px;
+  /* background-color: aqua; */
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+.Glry img {
+  width: 450px;
+  height: 300px;
+  /* border:2px solid red; */
+}
+
+/* <!-- -------------  footer css---------- --> */
+.footer {
+  width: 100%;
+  height: 70vh;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(66, 65, 65) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  /* border: 2px orangered solid; */
+  display: flex;
+}
+.ftr {
+  width: 500px;
+  height: 450px;
+  /* border:2px solid #fff; */
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  h2 {
+    text-transform: uppercase;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  svg {
+    color: blue;
+  }
+}
+.one p {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* display: inline-block; */
+}
+.bind-para {
+  width: 500px;
+  height: 380px;
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.first-inner {
+  width: 126px;
+  height: 380px;
+  top: 20px;
+  position: relative;
+  /* background-color:red; */
+  /* border: 2px solid orange; */
+}
+
+.logo svg {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  color: #fff;
+}
+.logo svg:hover {
+  color: blue;
+}
+
+.bind-logos {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 80px;
+}
